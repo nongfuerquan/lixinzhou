@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表单元素，简单理解就是可以输入的元素</title>
+</head>
+
+<body>
+  <!-- 
+  文本框 input就是表单元素里面的输入框
+  text是默认值
+  -->
+  姓名：<input type="text" placeholder="请输入姓名">
+
+  密码：<input type="password" placeholder="登录密码">
+  <!-- 数值输入框和日期输入框 -->
+  数值：<input type="number">
+  日期：<input type="date">
+  <hr>
+  <!-- 标签 label -->
+  <label>
+    带标签的表单素
+    <input type="text">
+    点击标签文本
+  </label>
+  <!-- 
+    单选按钮 radio name属性值相同为一组
+    checked属性出现表示为选中状态
+  -->
+  <label>
+    <input type="radio" name="sex">李易峰
+  </label>
+  <label>
+    <input type="radio" name="sex">肖月虹
+  </label>
+  <label>
+    <input type="radio" name="sex" checked>保密
+  </label>
+
+  <!-- 复选框 -->
+  <label>
+    <input type="checkbox">游戏
+  </label>
+  <label>
+    <input type="checkbox">音乐
+  </label>
+  <label>
+    <input type="checkbox">电影
+  </label>
+  <label>
+    <input type="checkbox">学习
+  </label>
+  <!-- 
+    列表select 复合标记
+    option是选项
+    selected表示选中
+  -->
+  <select>
+    <option>请选择最适合的</option>
+    <option>最佳伴侣</option>
+    <option>情投意合</option>
+    <option>神仙眷侣</option>
+    <option>永浴爱河</option>
+  </select>
+
+  <select size="1" multiple>
+    <option>肖月虹&李易峰</option>
+    <option>曾露玲&李现</option>
+    <option>刘婧婷&周杰伦</option>
+    <option>欧豪&赵靖&华晨宇</option>
+  </select>
+
+</body>
+
+</html>
