@@ -1,0 +1,43 @@
+body {
+  margin: 0px;
+  background-image: url(psb10.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* 透明背景 */
+.mydiv {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 5rem;
+  font-size: 2rem;
+  min-height: 100vh;
+}
+
+.mydiv>div {
+  display: flex;
+}
+
+.line {
+  border: 1px solid #ffffff;
+  width: 15rem;
+  height: 0px;
+  margin: 35px 10px;
+}
+
+.top-line {
+  border-right: 2px solid #ff0000;
+  border-left: 2px solid #ff0000;
+  padding: 1rem;
+}
+
+/*三角  */
+.sj {
+  width: 0px;
+  height: 0px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid #ffff00;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  /* 变形 */
+  transform: scaleY(0.8);
+}
